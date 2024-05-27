@@ -8,7 +8,7 @@ include("administrador/config/bd.php");
 $sentenciaSQL = $conexion->prepare("SELECT * FROM cursos");
 $sentenciaSQL->execute();
 $listaCursos = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
-?>
+?>s
 
 <?php foreach($listaCursos as $Curso){?>
 <div class="col-md-4">
